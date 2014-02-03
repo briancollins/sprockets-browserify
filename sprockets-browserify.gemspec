@@ -15,4 +15,5 @@ Gem::Specification.new do |s|
   #s.test_files = Dir["test/**/*"]
 
   s.add_runtime_dependency "sprockets",     "~> 2.1"
+  s.add_runtime_dependency "subprocess",    "1.0.0"
 end
