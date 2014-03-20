@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
 
   s.files = Dir["{lib,node_modules}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc", "package.json"]
+  s.files.reject! {|n| n.include?("/test/") }
   #s.test_files = Dir["test/**/*"]
 
   s.add_runtime_dependency "sprockets",     "~> 2.1"
